@@ -10,7 +10,7 @@ type Filme = {
     descricao: string,
     foto: string,
 }
-let filmes_repositorio:Filme[] = []
+let filmes_repositorio:Filme[] = [] //usar no lugar usecase para listar filmes e usar para que este listar aquil no banco de dados
 
 
 // Define uma rota padrão
