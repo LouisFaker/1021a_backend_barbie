@@ -1,9 +1,11 @@
 import express, {Request} from 'express';
 import BancoMongoDB from './infra/banco/banco-mongodb' //paso 2: banco de dados add
 import ListarFilme from './aplicacao/listar-filme.use-case' //paso 1: adiconar import listarfilme
+import cors from 'cors'
 const bancoMongoDB = new BancoMongoDB();
 const app = express();
 app.use(express.json())
+app.use(cors())
 
 
 app.get('/filmes', async (req, res) => {
